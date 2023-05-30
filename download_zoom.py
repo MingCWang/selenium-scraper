@@ -81,7 +81,6 @@ sorted_files = sorted(files, key=lambda x: os.path.getmtime(os.path.join(downloa
 # rename all files with the class name
 for i in range(len(class_names)):
     file = sorted_files[i]
-    print(file)
     class_name = class_names[i]
     # Construct the current file's full path
     current_path = os.path.join(download_directory, file)
